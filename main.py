@@ -48,7 +48,7 @@ def select_proxy_server(proxy_servers):
     for i in range(1, len(proxy_servers) + 1):
         print(Colors.cyan, Center.XCenter(f"Server {i}: {proxy_servers[i]}"))
     print(" ")
-    print(Colors.red, Center.XCenter("The only available Proxy is currently Proxy-1")
+    print(Colors.red, Center.XCenter("The only available Proxy is currently Proxy-1"))
     print(Colors.orange, Center.XCenter("╚════════════════════════════════════════════════════════════════════════════╝"))
 
     while True:
