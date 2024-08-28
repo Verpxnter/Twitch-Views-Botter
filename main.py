@@ -114,7 +114,7 @@ def save_cookies(driver, cookies_file='cookies.pkl'):
     print(Fore.GREEN + "Cookies were saved.")
         
 def main():
-    if not check_for_updates():
+    if not check_versions():
         return
     display_banner()
 
