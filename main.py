@@ -163,6 +163,5 @@ if __name__ == '__main__':
 
 ##############
 # Copyright © 2024 Verpxnter. All rights reserved.
-# This script is provided "as-is" without any warranties or guarantees.
 # Unauthorized copying or distribution of this script, in any form or by any means, is strictly prohibited.
 ##############
