@@ -1,7 +1,7 @@
 # Twitch-Views-Botter
 
 Welcome to **Twitch-Views-Botter** — the ultimate tool for *magically* boosting the viewer count of your favorite Twitch streamer (yup, it works... somehow... lmao).
-### Currently not working for Linux only Windows
+### Currently not working for Linux only Windows **(Cause Selenium is shittie 🐭)
 
 ## 1. Introduction
 
