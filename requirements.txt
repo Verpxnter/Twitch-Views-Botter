@@ -1,0 +1,5 @@
+requests
+selenium
+colorama
+pystyle
+tqdm
