@@ -25,6 +25,6 @@ Welcome to **Twitch-Views-Botter** — the ultimate tool for *magically* boostin
 Make sure you have Python installed. Then, just follow these steps:
 
 ```bash
-git clone https://github.com/YourUsername/Twitch-Views-Botter.git
+git clone https://github.com/Verpxnter/Twitch-Views-Botter.git
 cd Twitch-Views-Botter
 pip install -r requirements.txt
