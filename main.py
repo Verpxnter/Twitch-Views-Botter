@@ -104,6 +104,9 @@ def main():
     # Proxy URLs
     proxy_servers = {
         1: "https://www.blockaway.net",
+        # ------ #
+        # At the moment, Proxy Server *1 is the only one operational. (Cause of the cookies)
+        # ------ #
         2: "https://www.croxy.network",
         3: "https://www.croxy.org",
         4: "https://www.youtubeunblocked.live",
