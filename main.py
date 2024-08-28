@@ -29,6 +29,19 @@ $$  \ /$$//$$$$$$  |/$$$$$$  |/$$$$$$  |$$  \/$$/ $$$$$$$  |$$$$$$/   /$$$$$$  |
                               $$/                                                         """)))
     print("")
 
+def check_versions():
+    try:
+        r = requests.get("https://raw.githubusercontent.com/Verpxnter/Twitch-Views-Botter/main/vers.txt")
+        remote_version = r.content.decode('utf-8').strip()
+        local_version = open('vers.txt', 'r').read().strip()
+        if remote_version != local_version:
+            display_banner()
+            print(Fore.RED + "There is an Updated Version of this Tool. Please download it!")
+            return False
+        return True
+    except:
+        return True
+
 def select_proxy_server(proxy_servers):
     print(Colors.orange, Center.XCenter("╔════════════════════════════════════════════════════════════════════════════╗"))
     print(Colorate.Vertical(Colors.green_to_blue,"  "))
@@ -99,8 +112,10 @@ def save_cookies(driver, cookies_file='cookies.pkl'):
     with open(cookies_file, 'wb') as f:
         pickle.dump(cookies, f)
     print(Fore.GREEN + "Cookies were saved.")
-
+        
 def main():
+    if not check_for_updates():
+        return
     display_banner()
 
     # Proxy URLs
