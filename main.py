@@ -43,13 +43,13 @@ def check_versions():
         return True
 
 def select_proxy_server(proxy_servers):
-    print(Colors.orange, Center.XCenter("╔════════════════════════════════════════════════════════════════════════════╗"))
+    print(Colors.orange, Center.XCenter("╔═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═╗"))
     print(Colorate.Vertical(Colors.green_to_blue,"  "))
     for i in range(1, len(proxy_servers) + 1):
         print(Colors.cyan, Center.XCenter(f"Server {i}: {proxy_servers[i]}"))
     print(" ")
     print(Colors.red, Center.XCenter("The only available Proxy is currently Proxy-1"))
-    print(Colors.orange, Center.XCenter("╚════════════════════════════════════════════════════════════════════════════╝"))
+    print(Colors.orange, Center.XCenter("╚═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═╝"))
 
     while True:
         try:
@@ -63,16 +63,16 @@ def select_proxy_server(proxy_servers):
 
 def get_twitch_username():
     print(Colorate.Vertical(Colors.green_to_blue, "\n\n"))
-    print(Colors.orange, Center.XCenter("╔════════════════════════════════════════════════════════════════════════════╗"))
+    print(Colors.orange, Center.XCenter("╔═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═╗"))
     print(Colors.cyan, Center.XCenter("Streamer (e.g. Verpxnter)"))
-    print(Colors.orange, Center.XCenter("╚════════════════════════════════════════════════════════════════════════════╝"))
+    print(Colors.orange, Center.XCenter("╚═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═╝"))
     return input(Colorate.Vertical(Colors.cyan_to_blue, "Enter Streamer >> "))
 
 def get_viewer_count():
     print(Colorate.Vertical(Colors.green_to_blue, "\n\n"))
-    print(Colors.orange, Center.XCenter("╔════════════════════════════════════════════════════════════════════════════╗"))
+    print(Colors.orange, Center.XCenter("╔═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═╗"))
     print(Colors.cyan, Center.XCenter("Viewers to be added"))
-    print(Colors.orange, Center.XCenter("╚════════════════════════════════════════════════════════════════════════════╝"))
+    print(Colors.orange, Center.XCenter("╚═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═╝"))
 
     while True:
         try:
@@ -112,7 +112,7 @@ def save_cookies(driver, cookies_file='cookies.pkl'):
     with open(cookies_file, 'wb') as f:
         pickle.dump(cookies, f)
     print(Fore.GREEN + "Cookies were saved.")
-        
+
 def main():
     if not check_versions():
         return
@@ -155,9 +155,9 @@ def main():
             text_box.send_keys(f'https://www.twitch.tv/{twitch_username}')
             text_box.send_keys(Keys.ENTER)
 
-        print(Colors.orange, Center.XCenter("╔════════════════════════════════════════════════════════════════════════════╗"))
-        print(Colors.cyan, Center.XCenter("Die Viewer wurden hinzugefügt und erscheinen bald."))
-        print(Colors.orange, Center.XCenter("╚════════════════════════════════════════════════════════════════════════════╝"))
+        print(Colors.orange, Center.XCenter("╔═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═╗"))
+        print(Colors.cyan, Center.XCenter("The Viewers were added, it needs a small time to see them."))
+        print(Colors.orange, Center.XCenter("╚═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═x═╝"))
 
         while True:
             print(Fore.LIGHTYELLOW_EX + "Refreshing in 15 Seconds...")
@@ -172,7 +172,7 @@ def main():
         # input(Colorate.Vertical(Colors.cyan_to_blue, "Press any key to stop..."))
 
     except Exception as e:
-        print(Fore.RED + f"Fehler: {e}")
+        print(Fore.RED + f"Error: {e}")
 
 if __name__ == '__main__':
     main()
