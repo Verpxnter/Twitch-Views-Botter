@@ -17,8 +17,8 @@ Welcome to **Twitch-Views-Botter** — the ultimate tool for *magically* boostin
 
 1. **Select Your Proxy Server**: Choose from a list of proxy servers. (Reminder: Only the first one works properly right now, the rest are just there for show. 😂)
 2. **Enter Your Streamer**: Input the Twitch username of your chosen streamer who you want to give that sweet view count boost.
-3. **Set the Viewer Count**: Decide how many "viewers" you want to join the party. Remember: the more, the merrier — but also, the more unstable things can get. Use responsibly, or not... 🤷‍♂️
-4. **Watch the Magic Happen**: Sit back and enjoy as the tool does its thing, adding viewers to the stream as if by magic. 🪄
+3. **Set the Viewer Count**: Choose how many "viewers" you want to invite to the party. The main spot is usually between 10 and 25, though it might occasionally spike. Just keep in mind that the more viewers you add, the more unstable things can get. Use responsibly, or don’t — we’re not your parents. 🤷‍♂️ (And yes, it’s a bit of a wild ride, lmao)
+4. **Troll with Views**: Sit back and watch as the tool works its magic, boosting the viewer count on the stream. Get ready for some hilarious reactions as your favorite streamer's chat goes wild trying to figure out where all these "viewers" are coming from. 🪄😂
 
 ## 4. Installation and Setup
 
