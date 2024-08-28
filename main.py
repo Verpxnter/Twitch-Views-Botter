@@ -34,36 +34,38 @@ def select_proxy_server(proxy_servers):
     print(Colorate.Vertical(Colors.green_to_blue,"  "))
     for i in range(1, len(proxy_servers) + 1):
         print(Colors.cyan, Center.XCenter(f"Server {i}: {proxy_servers[i]}"))
+    print(" ")
+    print(Colors.red, Center.XCenter("The only available Proxy is currently Proxy-1")
     print(Colors.orange, Center.XCenter("╚════════════════════════════════════════════════════════════════════════════╝"))
 
     while True:
         try:
-            proxy_choice = int(input(Colorate.Vertical(Colors.cyan_to_blue, "Wähle die Proxy (1-5): >>")))
+            proxy_choice = int(input(Colorate.Vertical(Colors.cyan_to_blue, "Choose the Proxy (1-5): >>")))
             if proxy_choice in proxy_servers:
                 return proxy_servers[proxy_choice]
             else:
-                print(Fore.RED + "Diese Nummer existiert nicht.")
+                print(Fore.RED + "This number is not available!")
         except ValueError:
-            print(Fore.RED + "Gebe eine Nummer ein.")
+            print(Fore.RED + "Enter a Number.")
 
 def get_twitch_username():
     print(Colorate.Vertical(Colors.green_to_blue, "\n\n"))
     print(Colors.orange, Center.XCenter("╔════════════════════════════════════════════════════════════════════════════╗"))
-    print(Colors.cyan, Center.XCenter("Betroffener Nutzer (e.g. Verpxnter)"))
+    print(Colors.cyan, Center.XCenter("Streamer (e.g. Verpxnter)"))
     print(Colors.orange, Center.XCenter("╚════════════════════════════════════════════════════════════════════════════╝"))
-    return input(Colorate.Vertical(Colors.cyan_to_blue, "Nutzer >> "))
+    return input(Colorate.Vertical(Colors.cyan_to_blue, "Enter Streamer >> "))
 
 def get_viewer_count():
     print(Colorate.Vertical(Colors.green_to_blue, "\n\n"))
     print(Colors.orange, Center.XCenter("╔════════════════════════════════════════════════════════════════════════════╗"))
-    print(Colors.cyan, Center.XCenter("Anzahl der Viewer"))
+    print(Colors.cyan, Center.XCenter("Viewers to be added"))
     print(Colors.orange, Center.XCenter("╚════════════════════════════════════════════════════════════════════════════╝"))
 
     while True:
         try:
-            return int(input(Colorate.Vertical(Colors.cyan_to_blue, "Viewer >> ")))
+            return int(input(Colorate.Vertical(Colors.cyan_to_blue, "Viewer Count >> ")))
         except ValueError:
-            print(Fore.RED + "Bitte gebe eine Nummer ein, denke dran: Je höher die Anzahl desto unstabiler wird es!")
+            print(Fore.RED + "Enter an Number. And keep in mind, a higher amount of Views needs more time!")
 
 def setup_driver():
     chrome_path = r'C:\Program Files\Google\Chrome\Application\chrome.exe'
@@ -88,15 +90,15 @@ def load_cookies(driver, cookies_file='cookies.pkl'):
             cookies = pickle.load(f)
         for cookie in cookies:
             driver.add_cookie(cookie)
-        print(Fore.GREEN + "Cookies wurden geladen.")
+        print(Fore.GREEN + "Cookies loaded successfully.")
     except (FileNotFoundError, pickle.PickleError) as e:
-        print(Fore.RED + "Keine Cookies wurden gefunden..")
+        print(Fore.RED + "No Cookies were found..")
 
 def save_cookies(driver, cookies_file='cookies.pkl'):
     cookies = driver.get_cookies()
     with open(cookies_file, 'wb') as f:
         pickle.dump(cookies, f)
-    print(Fore.GREEN + "Cookies wurden gespeichert.")
+    print(Fore.GREEN + "Cookies were saved.")
 
 def main():
     display_banner()
