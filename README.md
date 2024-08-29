@@ -7,6 +7,8 @@ Welcome to **Twitch-Views-Botter** — the ultimate tool for *magically* boostin
 
 **Twitch-Views-Botter** is a simple Python tool designed to boost the viewer count of a selected Twitch stream. Think of it as a little nudge to help your favorite streamer feel a bit more popular — or just to mess around and see how high you can go without Twitch noticing. 😂
 
+**Just be nice and maybe dont copy or republish the code**
+
 ## 2. Features
 
 - **Boost Viewer Count**: Instantly adds viewers to the chosen Twitch stream.  
