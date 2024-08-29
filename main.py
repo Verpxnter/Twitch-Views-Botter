@@ -180,5 +180,7 @@ if __name__ == '__main__':
 
 ##############
 # Copyright © 2024 Verpxnter. All rights reserved.
-# Unauthorized copying or distribution of this script, in any form or by any means, is strictly prohibited.
+# Modification of this code, in whole or in part, 
+# is strictly prohibited, regardless of whether changes have been made.
 ##############
+
